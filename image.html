@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #show{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            margin: 50px auto;
+            background-size: cover;
+            
+         }
+    </style>
+</head>
+<body>
+    <div id="show"></div>
+    <input type="file" accept=".jpg" id="file_a" onchange="demo()">
+
+    <script>
+       function demo(){
+        var a = document.getElementById("file_a").value.replace(/^.*[\\\/]/, "");
+        
+        var b = document.getElementById("show");
+        b.style.backgroundImage ="url("+a+")";
+       }
+    </script>
+</body>
+</html>
