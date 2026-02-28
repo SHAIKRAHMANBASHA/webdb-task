@@ -7,15 +7,42 @@
     <style>
          #show{
             height: 200px;
-            width: 200px;
-            border: 1px solid black;
+            width: 300px;
+            border: 2px solid rgb(211, 14, 14);
             margin: 50px auto;
             background-size: cover;
+            border-style: dashed;
+
             
          }
+         h1{
+            text-align: center;
+            text-transform: capitalize;
+            text-decoration: wavy;
+         }
+         #file_a{
+            margin: 10px auto;
+            position: relative;
+            left: 0;
+            right: 0;
+            color: red;
+            max-width: 400px;
+
+         }
+         #image{
+            text-align: center;
+            color: blue;
+            font-size: large;
+            border: 1px solid green;
+            width: auto;
+            margin: 10px auto;
+            display: none;
+         }
+
     </style>
 </head>
 <body>
+    <h1>image show</h1>
     <div id="show"></div>
     <input type="file" accept=".png" id="file_a" onchange="demo()">
 
